@@ -1,0 +1,6 @@
+apiVersion: app.gqq.com/v1beta1
+kind: AppService
+metadata:
+  name: appservice-sample
+spec:
+  # TODO(user): Add fields here

@@ -1,0 +1,12 @@
+apiVersion: app.gqq.com/v1beta1
+kind: AppService
+metadata:
+  name: nginx
+  namespace: default
+spec:
+  size: 2
+  image: nginx:1.24.0
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30002

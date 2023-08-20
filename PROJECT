@@ -1,0 +1,19 @@
+domain: gqq.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: operator-demo
+repo: github.com/gqq/operator-demo
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: gqq.com
+  group: app
+  kind: AppService
+  path: github.com/gqq/operator-demo/api/v1beta1
+  version: v1beta1
+version: "3"
